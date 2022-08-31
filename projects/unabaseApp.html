@@ -59,21 +59,34 @@
 						</div>
 					</div>
 					<div class="inner" class="topNegativo" style="margin-top: -40px !important;">
-						<div class="alinear">
+						<div class="alinear2" style="margin-bottom: 30px;">
+							<p style="margin: 0 !important;font-weight: bold; font-size: 110%;">Used tools: </p>
+							<div class="chip noPhone">Vue js</div>									
+							<div class="chip noPhone">Node js</div>									
+							<div class="chip noPhone">Mongo Db</div>	
+							<div class="chip noPhone">Asana</div>	
+							<div class=" noDesktop alinear">
+								<div class="chip "style="margin:0 5px; padding:0 10px">Vue js</div>									
+								<div class="chip " style="margin:0 5px; padding:0 10px">Node js</div>									
+								<div class="chip " style="margin:0 5px; padding:0 10px">Mongo Db</div>	
+								<div class="chip " style="margin:0 5px; padding:0 10px">Asana</div>	
+							</div>
+						</div>
+						<div class="alinear" style="margin-top: 20px;">
 							<span  style=" display: flex; justify-content: flex-end;">
-								<img class="imagePhone" src="../images/unabaseNetwork2.png"/>
+								<img class="imagePhone" id="myImg1" alt="Network Page" src="../images/unabaseNetwork2.png"/>
 							</span>
                             <div style="padding: 10px;"></div>
                             <span style=" display: flex; justify-content: flex-start;">
-								<img class="imagePhone" src="../images/unabaseNetwork.png"/>
+								<img class="imagePhone" id="myImg2" alt="Proyect Page" src="../images/unabaseNetwork.png"/>
 							</span>
                         </div>
-
-						<p style="margin-top: 20px;">Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-						<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+						<p  style="margin-top: 20px;">This application allows a creative world company to have total control of its projects from its creation, generate the project budget, convert it into a business and invoice it. This allows companies to have full control of their finances. In addition, the application has a network section that allows accounts to share projects with collaborators.</p>
+						<p>I was hired to work on the Front-End development of this application by the unabase company using the Vue js framework. 3 months later I was promoted to full-stack developer. Among the tasks of the position I can mention, continue with the Front-End work, develop the entire login environment for new users. In addition to creating a development pipeline in Heroku.</p>
+						<p>I am currently Project Manager of the project in which I must maintain the development of the project based on the company's requirements.</p>
 
 						<span class="image fit" style=" display: flex;
-						justify-content: center;""><img src="../images/panelControlPollagol.png" style="max-width: 110%;
+						justify-content: center;""><img  id="myImg3" alt="Budget Section" src="../images/unabaseTable.png" style="max-width: 110%;
 							max-height: 70%;" /></span>
                     </div>
 				</section>
@@ -88,6 +101,19 @@
 					</ul>
 				</div>
 			</footer>
+
+			<div id="myModal1" class="modal">
+				<img class="modal-content" id="img01">
+				<div id="caption1" class="caption"></div>
+			</div>
+			<div id="myModal2" class="modal">
+				<img class="modal-content" id="img02">
+				<div id="caption2" class="caption"></div>
+			</div>
+			<div id="myModal3" class="modal">
+				<img class="modal-content" id="img03">
+				<div id="caption3" class="caption"></div>
+			</div>
 
 		<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
@@ -128,6 +154,12 @@
 		.navega{
 			margin: -5px 0 0 0 !important;
 		}
+		.modal-content4 {
+		margin: auto;
+		display: block;
+		width: 80%;
+		max-width: 1000px;
+		}
 	}
 	@media (min-width: 480px) {
 		.noDesktop{
@@ -144,8 +176,17 @@
 			font-size: 0.9em !important;
 			padding-right: 10px !important;
 		}
-		
-
+		.modal-content4 {
+		margin: auto;
+		display: block;
+		width: 90%;
+		max-width: 1000px;
+		}
+		.alinear2 {
+		display: flex;
+		justify-content:center;
+		align-items: center;
+		}
 	}
 
 .alinear {
@@ -153,4 +194,148 @@
     justify-content: space-around;
     align-items: center;
 }
+.chip{
+    display: inline-flex;
+    flex-direction: row;
+    background-color: #b74e91;
+    border: none;
+    cursor: default;
+    height: 27px;
+    outline: none;
+    padding: 0 20px;
+	margin: 0 10px;
+    font-size: 14px;
+    color: white;
+    font-family:"Open Sans", sans-serif;
+    white-space: nowrap;
+    align-items: center;
+    border-radius: 200px;
+    vertical-align: middle;
+    text-decoration: none;
+    justify-content: center;
+	}
+	.chip:hover {opacity: 0.8;}
+	.myImg:hover {opacity: 0.7;}
+	/* The Modal (background) */
+	.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	}
+
+	/* Modal Content (image) */
+	.modal-content {
+	margin: auto;
+	display: block;
+	width: 25%;
+	max-width: 700px;
+	}
+
+	/* Caption of Modal Image */
+	.caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+	}
+
+	/* Add Animation */
+	.modal-content , .caption {  
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+	}
+	.modal-content4, .caption {  
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+	}
+
+	@-webkit-keyframes zoom {
+	from {-webkit-transform:scale(0)} 
+	to {-webkit-transform:scale(1)}
+	}
+
+	@keyframes zoom {
+	from {transform:scale(0)} 
+	to {transform:scale(1)}
+	}
+	/* 100% Image Width on Smaller Screens */
+	@media only screen and (max-width: 700px){
+	.modal-content {
+		width: 70%;
+	}
+}
 </style>
+
+<script>
+	// Get the modal
+var modal1 = document.getElementById("myModal1");
+var modal2 = document.getElementById("myModal2");
+var modal3 = document.getElementById("myModal3");
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img1 = document.getElementById("myImg1");
+var img2 = document.getElementById("myImg2");
+var img3 = document.getElementById("myImg3");
+var modalImg1 = document.getElementById("img01");
+var modalImg2 = document.getElementById("img02");
+var modalImg3 = document.getElementById("img03");
+var captionText1 = document.getElementById("caption1");
+var captionText2 = document.getElementById("caption2");
+var captionText3 = document.getElementById("caption3");
+img1.onclick = function(){
+	console.log('entrando1',modal1)
+  modal1.style.display = "block";
+  modalImg1.src = this.src;
+  captionText1.innerHTML = this.alt;
+}
+img2.onclick = function(){
+	console.log('entrando2')
+  modal2.style.display = "block";
+  modalImg2.src = this.src;
+  captionText2.innerHTML = this.alt;
+}
+img3.onclick = function(){
+  modal3.style.display = "block";
+  modalImg3.src = this.src;
+  captionText3.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close");
+
+// When the user clicks on <span> (x), close the modal
+modalImg1.onclick = function() { 
+	console.log('buenino')
+  modal1.style.display = "none";
+}
+modal1.onclick = function() { 
+  modal1.style.display = "none";
+}
+modalImg2.onclick = function() { 
+  modal2.style.display = "none";
+}
+modal2.onclick = function() { 
+  modal2.style.display = "none";
+}
+modalImg3.onclick = function() { 
+  modal3.style.display = "none";
+}
+modal3.onclick = function() { 
+  modal3.style.display = "none";
+}
+</script>
